@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web2</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- make menu -->
+      <label for="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <input type="radio" name="menu" id="menu" />
+      <input type="radio" name="menu" id="close" />
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">gallery</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">video</a></li>
+            <li><a href="">music</a></li>
+          </ul>
+        </nav>
+        <label for="close">&times;</label>
+      </div>
+      <!-- end make menu -->
+      <!--make slider-->
+      <div class="slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/karimfront.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/girlkarim.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/karimback.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/karim.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!--end make slider-->
+      <!--make product-->
+      <div class="products">
+        <div class="product">
+          <h2>Helloo-World!</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+            corporis magnam nobis libero. Nihil laudantium perspiciatis iste
+            quos optio ex quam blanditiis et temporibus consequuntur velit,
+            nesciunt eaque veniam. Voluptates, amet porro! Eius et quis est
+            eaque, placeat nisi perferendis ad expedita deleniti impedit ipsam,
+            sit modi repellendus dolorum. Omnis, ullam ad rerum laboriosam
+            nihil, veniam obcaecati facilis fuga quod earum sequi architecto
+            quam debitis doloribus error ab at, minima sit dignissimos iusto.
+            Consequatur sit ducimus quos fugit corporis eos cumque molestias
+            veritatis eum perspiciatis asperiores repellat ex rem ab, iusto
+            voluptatem velit cum neque optio illo officiis dolorum nulla.
+          </p>
+          <img src="./images/karim.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+        <div class="product">
+          <h2>Helloo-World!</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+            corporis magnam nobis libero. Nihil laudantium perspiciatis iste
+            quos optio ex quam blanditiis et temporibus consequuntur velit,
+            nesciunt eaque veniam. Voluptates, amet porro! Eius et quis est
+            eaque, placeat nisi perferendis ad expedita deleniti impedit ipsam,
+            sit modi repellendus dolorum. Omnis, ullam ad rerum laboriosam
+            nihil, veniam obcaecati facilis fuga quod earum sequi architecto
+            quam debitis doloribus error ab at, minima sit dignissimos iusto.
+            Consequatur sit ducimus quos fugit corporis eos cumque molestias
+            veritatis eum perspiciatis asperiores repellat ex rem ab, iusto
+            voluptatem velit cum neque optio illo officiis dolorum nulla.
+          </p>
+          <img src="./images/karim.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+        <div class="product">
+          <h2>Helloo-World!</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+            corporis magnam nobis libero. Nihil laudantium perspiciatis iste
+            quos optio ex quam blanditiis et temporibus consequuntur velit,
+            nesciunt eaque veniam. Voluptates, amet porro! Eius et quis est
+            eaque, placeat nisi perferendis ad expedita deleniti impedit ipsam,
+            sit modi repellendus dolorum. Omnis, ullam ad rerum laboriosam
+            nihil, veniam obcaecati facilis fuga quod earum sequi architecto
+            quam debitis doloribus error ab at, minima sit dignissimos iusto.
+            Consequatur sit ducimus quos fugit corporis eos cumque molestias
+            veritatis eum perspiciatis asperiores repellat ex rem ab, iusto
+            voluptatem velit cum neque optio illo officiis dolorum nulla.
+          </p>
+          <img src="./images/karim.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+      </div>
+      <!--end make product-->
+    </div>
+    <!-- <h1 id="width"></h1> -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      window.addEventListener("resize", function (e) {
+        console.log(e);
+        document.querySelector("h1#width").innerHTML = e.target.innerWidth;
+        console.log(e.target.innerwidth);
+      });
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
